@@ -1,4 +1,4 @@
-Gulp Mail Design Kit
+Gulp HTML Kit
 =============================
 
 A StartKit including full setup for GulpJS, Sass, BrowserSync.
