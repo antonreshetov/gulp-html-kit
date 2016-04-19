@@ -23,17 +23,17 @@ gulp.task('js', function(){
     .pipe(gulp.dest('app/js'));
 });
 
-gulp.task('build', function () {
+gulp.task('html', function () {
 	gulp.src('src/*.html')
     .pipe(browserSync.reload({stream:true}))
 		.pipe(gulp.dest('app'));
 });
 
 gulp.task('watch', function () {
-  gulp.watch('src/css/*.scss', ['sass', 'build', 'js']);
-  gulp.watch('src/*.html', ['build']);
-  gulp.watch('src/js/*.js', ['build']);
+  gulp.watch('src/css/*.scss', ['sass']);
+  gulp.watch('src/*.html', ['html']);
+  gulp.watch('src/js/*.js', ['js']);
 });
 
-gulp.task('app', ['build', 'js' , 'sass']);
-gulp.task('default', ['browser-sync', 'watch', 'build', 'js']);
+gulp.task('app', ['html', 'js' , 'sass']);
+gulp.task('default', ['browser-sync', 'watch', 'html', 'js']);

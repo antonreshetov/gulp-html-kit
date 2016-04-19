@@ -18,7 +18,7 @@ To use this starter project, you'll need the following things installed on your 
 
 **development mode**
 
-1. This will give you file watching, browser synchronisation, css inline style, auto-rebuild.
+1. This will give you file watching, browser synchronisation, sass, auto-rebuild.
 
 ```shell
 $ gulp
